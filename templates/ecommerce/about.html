@@ -20,22 +20,61 @@
     {% endfor %}
 {% endif %}
 
-<h1 style="margin: 50px 260px 10px 260px; padding: 20px 260px; text-align: center;">Welcome to The EXTP Store</h1>
+<div class="container-fluid" style="display:flex;flex-direction:column;justify-content:center">
+    <h1 style="text-align: center;">Welcome to In Touch - Social Network</h1>
 
-<div style="margin: 20px 640px; padding: 10px 10px; text-align: left;">
+    <div class="container-fluid">
+        <p>
+            Welcome to our platform! We're a unique social network with a twist – think of us as your digital hub where connections are made, ideas are shared, and treasures find new homes.
+        </p> 
+        <p>
+            At our core, we're all about fostering meaningful connections. Whether it's sharing your latest adventures, discussing the hottest topics, or simply reaching out to old friends, our platform is designed to bring people together.
+        </p>
+        <p>
+            But we're not just about socializing; we're also a vibrant marketplace where you can buy, sell, or even give away items you no longer need. Need to declutter your space or find that perfect vintage piece? Look no further. Our community is here to help you find what you're looking for and maybe discover something you never knew you needed.
+        </p>
+        <p>
+            Join us today and become part of our growing community. Together, let's share, connect, and discover the endless possibilities that await.    
+        </p>
+    </div>
+    <hr>
+    <div class="container-fluid" style="width:50%;margin-bottom:10px">
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
-    <p>Your one-stop destination for a wide range of high-quality products that cater to your everyday needs. At The EXTP Store, we pride ourselves on offering an extensive selection of products carefully curated to meet the diverse lifestyles and preferences of our customers. From fashion-forward apparel to cutting-edge electronics, eco-friendly home goods to innovative gadgets, we have something for everyone.</p>
-
-    <p>Our mission at The EXTP Store is simple: to provide our customers with top-notch products that enhance their lives and bring joy and convenience to their daily routines. Whether you're shopping for yourself, searching for the perfect gift, or simply browsing for inspiration, you'll find an unparalleled selection of items that combine style, functionality, and affordability.</p>
-
-    <p>At The EXTP Store, we are committed to providing exceptional customer service and a seamless shopping experience. With fast shipping, easy returns, and secure payment options, we strive to make your shopping experience as convenient and enjoyable as possible. Join us today and discover why The EXTP Store is the ultimate destination for quality products that enhance your life.</p>
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+          
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://www.etondigital.com/wp-content/uploads/2019/06/Building-A-Social-Marketplace-4-Advantages-For-Businesses1.png" style="height:300px" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="https://craftindustryalliance.org/CIAJune/ecommercelede.png" style="height:300px" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="https://miro.medium.com/v2/resize:fit:1400/1*Grifgcst7t_E9eRsX0Myuw.png" style="height:300px" class="d-block w-100">
+              </div>
+            </div>
+          
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+    <div class="container-fluid" style="display:flex;justify-content:center">
+        <a class="btn btn-primary" href="{% url 'ecommerce:home' %}" style="margin:10px">
+            Main Page
+        </a>
+    </div>
 </div>
-
-<h4 style="margin: 10px 260px 10px 260px; padding: 20px 260px; text-align: center;">Our top sold product:</h4>
-
-<div id="video-container" style="margin: 20px 320px; padding: 0px 320px; text-align: left;">
-    <iframe width="830" height="500" src="https://www.youtube.com/embed/XHTrLYShBRQ" frameborder="0" allowfullscreen></iframe>
-</div>
-
 
 {% endblock %}
